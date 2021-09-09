@@ -1,19 +1,26 @@
 :root {
   // colors
 
-  --color-black: #000;
+  --color-black: #2c2b2b;
   --color-white: #fff;
-  --color-eastbay: #484283;
-  --color-accent: #f14f4f;
+  --color-gold-light: #ffd1a0;
+  --color-gold: #ffc178;
+  --color-orange: #ffa343;
 
   // отступы
 
-  --grid-gap: 20px;
-  --main-offset: 40px;
+  --small-offset: 1rem;
+  --small-md-offset: 1.5rem;
+  --second-offset: 2rem;
+  --main-offset: 3rem;
+  --big-offset: 5rem;
+  --high-offset: 6rem;
 
   // шрифты
 
-  --font-family: "Intro", sans-serif;
-  --middle-high: 700 30px / 140% var(--font-family);
-  --small-font: 400 14px / 140% var(--font-family);
+  --font-family: "Open Sans", sans-serif;
+  --small-font: 400 1.4rem / 140% var(--font-family);
+  --middle-reg-font: 400 1.6rem / 140% var(--font-family);
+  --semi-font: 600 1.8rem / 140% var(--font-family);
+  --middle-bold: 700 2.4rem / 140% var(--font-family);
 }

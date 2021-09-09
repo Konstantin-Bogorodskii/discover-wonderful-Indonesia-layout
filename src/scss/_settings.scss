@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  font-size: 10px;
 }
 
 *,
@@ -10,8 +11,12 @@ html {
 
 body {
   margin: 0;
-  font-family: "asd", sans-serif;
-  background-color: var(--color-white);
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
+  color: var(--color-white);
+  background: var(--color-black) url("../img/header-bg.jpg") no-repeat center
+    top;
+  background-size: 100% auto;
 }
 
 img {
@@ -20,6 +25,7 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--color-white);
 }
 
 .list-reset {
@@ -79,4 +85,8 @@ a {
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.cover-space {
+  padding-bottom: 82%;
 }
