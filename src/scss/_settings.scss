@@ -80,7 +80,7 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1210px; // Если контейнер 1180, то пишем 1210 из-за паддингов 15px по бокам
+  max-width: 1490px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -89,4 +89,29 @@ a {
 
 .cover-space {
   padding-bottom: 82%;
+}
+
+.section-summary {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--main-offset);
+  font: var(--low-bold);
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: var(--color-gold);
+
+  &::before {
+    content: "";
+    display: block;
+    margin-right: var(--main-offset);
+    width: 7rem;
+    height: 0.2rem;
+    background-color: var(--color-gold);
+  }
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: var(--main-offset);
+  font: var(--title-bold);
 }

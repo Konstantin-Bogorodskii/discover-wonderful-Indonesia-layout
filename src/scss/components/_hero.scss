@@ -1,0 +1,65 @@
+.hero {
+  &__container {
+    position: absolute;
+    left: 7%;
+    right: 7%;
+    top: 14vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 9.6rem;
+    line-height: 140%;
+    color: var(--color-white);
+
+    &-fancy {
+      display: block;
+      font-weight: 400;
+      font-size: 8.8rem;
+    }
+  }
+}
+
+.scroll-down {
+  margin-top: 12.5rem;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    font: var(--semi-font);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--color-orange);
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-left: 1rem;
+    width: 1.6rem;
+    height: 2.4rem;
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: var(--color-white);
+      object-fit: cover;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+.scroll-down__link:hover .scroll-down__icon {
+  transform: translate(0, 2px);
+}
+
+.scroll-down__link:hover .scroll-down__icon svg {
+  fill: var(--color-orange);
+}

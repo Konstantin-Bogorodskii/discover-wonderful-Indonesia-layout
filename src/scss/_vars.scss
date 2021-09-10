@@ -1,11 +1,12 @@
 :root {
   // colors
 
-  --color-black: #2c2b2b;
+  --color-black: #000;
   --color-white: #fff;
   --color-gold-light: #ffd1a0;
   --color-gold: #ffc178;
   --color-orange: #ffa343;
+  --color-dark-orange: #fbd784;
 
   // отступы
 
@@ -22,5 +23,7 @@
   --small-font: 400 1.4rem / 140% var(--font-family);
   --middle-reg-font: 400 1.6rem / 140% var(--font-family);
   --semi-font: 600 1.8rem / 140% var(--font-family);
+  --low-bold: 700 1.8rem / 140% var(--font-family);
   --middle-bold: 700 2.4rem / 140% var(--font-family);
+  --title-bold: 700 6.4rem / 140% var(--font-family);
 }

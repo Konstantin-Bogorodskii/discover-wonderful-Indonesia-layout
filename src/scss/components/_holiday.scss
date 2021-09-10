@@ -1,0 +1,24 @@
+.holiday {
+  padding-bottom: 25rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 40%;
+  }
+
+  &__right {
+    width: 44%;
+  }
+
+  &__text {
+    margin: 0;
+    margin-bottom: var(--main-offset);
+    font: var(--semi-font);
+    line-height: 32px;
+  }
+}
