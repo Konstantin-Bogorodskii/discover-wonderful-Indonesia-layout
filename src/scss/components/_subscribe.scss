@@ -1,0 +1,54 @@
+.subscribe {
+  margin-right: 25rem;
+  max-width: 40rem;
+
+  &__title {
+    margin: 0;
+    margin-bottom: var(--big-offset);
+    font: var(--middle-bold);
+    font-size: 3.6rem;
+    letter-spacing: -0.3rem;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+    width: 100%;
+  }
+
+  &__input {
+    border: none;
+    padding: var(--second-offset) var(--small-md-offset) var(--main-offset);
+    font: var(--small-font);
+    color: var(--color-white);
+    background: none;
+
+    &::placeholder {
+      color: rgba($color: #fff, $alpha: 0.3);
+    }
+
+    &:focus {
+      outline: none;
+      border: none;
+      box-shadow: 0 0 0.5rem var(--color-gold-light);
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.4rem 0.4rem 0 0;
+    width: 7rem;
+    height: 100%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: var(--color-orange);
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0.7rem var(--color-orange), 0 0 1.4rem var(--color-orange);
+    }
+  }
+}
