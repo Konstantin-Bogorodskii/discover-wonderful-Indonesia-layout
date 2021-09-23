@@ -1,8 +1,7 @@
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
+var swiper = new Swiper(".gallery__swiper", {
+  slidesPerView: 1,
   direction: "horizontal",
 
-  // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
