@@ -107,6 +107,15 @@ a {
     width: 7rem;
     height: 0.2rem;
     background-color: var(--color-gold);
+
+    @include table-small {
+      margin-right: var(--second-offset);
+      width: 5rem;
+    }
+  }
+
+  @include table-small {
+    margin-bottom: var(--small-offset);
   }
 }
 

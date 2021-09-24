@@ -1,8 +1,14 @@
 .footer {
   &__mid {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-bottom: 10rem;
     padding-top: var(--big-offset);
+
+    @include table-small {
+      justify-content: space-around;
+    }
   }
 
   &__socials {
@@ -20,12 +26,21 @@
       &:focus {
         color: var(--color-gold);
       }
+
+      @include table-small {
+        margin-right: 0;
+        margin-bottom: var(--second-offset);
+      }
     }
 
     &-list {
       display: flex;
       align-items: center;
       margin-left: auto;
+
+      @include table-small {
+        margin-left: 0;
+      }
     }
 
     &-item {
@@ -34,6 +49,11 @@
       &:not(:last-child) {
         margin-right: var(--big-offset) !important;
       }
+    }
+
+    @include table-small {
+      flex-direction: column;
+      padding: 0 4rem 10rem;
     }
   }
 }
@@ -68,8 +88,7 @@
     }
   }
 
-  &--services,
-  &--about {
-    margin-right: 18.4rem;
+  &:not(:last-child) {
+    margin-right: var(--small-offset);
   }
 }

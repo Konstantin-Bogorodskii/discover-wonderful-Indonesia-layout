@@ -1,0 +1,19 @@
+@import "../mixins";
+
+.burger {
+  --burger-width: 3rem;
+  --burger-height: 2rem;
+  --burger-line-height: 0.24rem;
+
+  @include burger;
+
+  display: none;
+
+  @include mobile {
+    position: absolute;
+    right: var(--big-offset);
+    z-index: 999;
+    display: block;
+    color: var(--color-white);
+  }
+}

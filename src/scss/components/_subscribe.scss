@@ -1,5 +1,5 @@
 .subscribe {
-  margin-right: 25rem;
+  margin-right: var(--small-offset);
   max-width: 40rem;
 
   &__title {
@@ -8,6 +8,12 @@
     font: var(--middle-bold);
     font-size: 3.6rem;
     letter-spacing: -0.3rem;
+
+    @include table-small {
+      margin-bottom: var(--second-offset);
+      font-size: 3rem;
+      text-align: center;
+    }
   }
 
   &__form {
@@ -50,5 +56,12 @@
     &:focus {
       box-shadow: 0 0 0.7rem var(--color-orange), 0 0 1.4rem var(--color-orange);
     }
+  }
+
+  @include table-small {
+    margin: 0;
+    margin-bottom: var(--main-offset);
+    width: 100%;
+    max-width: none;
   }
 }

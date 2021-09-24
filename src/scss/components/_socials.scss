@@ -40,5 +40,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include table-small {
+      top: 0;
+    }
   }
 }
