@@ -10,12 +10,11 @@
     flex-direction: column;
     align-items: center;
 
-    @include table-small {
-      top: 25vw;
-    }
-
-    @include mobile-mid {
-      top: 20vw;
+    @include tablet {
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -35,17 +34,17 @@
       }
 
       @include table-small {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
       }
 
       @include mobile-mid {
         margin-bottom: var(--small-offset);
-        font-size: 4rem;
+        font-size: 5rem;
         text-align: center;
       }
 
       @include mobile-small {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
       }
     }
 
@@ -54,17 +53,16 @@
     }
 
     @include table-small {
-      font-size: 5.3rem;
+      font-size: 6.3rem;
     }
 
     @include mobile-mid {
-      font-size: 4.7rem;
       text-align: center;
     }
+  }
 
-    @include mobile-small {
-      font-size: 3rem;
-    }
+  @include desktop {
+    height: 100vh;
   }
 }
 

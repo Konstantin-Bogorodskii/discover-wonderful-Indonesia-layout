@@ -24,6 +24,10 @@ body {
     top;
   background-size: 100% auto;
 
+  @include desktop {
+    background-size: 100% 100vh;
+  }
+
   @include mobile-small {
     font-size: 9px;
   }
@@ -98,7 +102,12 @@ a {
 }
 
 .cover-space {
+  position: relative;
   padding-bottom: 82%;
+
+  @include desktop {
+    padding-bottom: 0;
+  }
 }
 
 .section-summary {
@@ -118,9 +127,9 @@ a {
     height: 0.2rem;
     background-color: var(--color-gold);
 
-    @include table-small {
+    @include mobile-mid {
       margin-right: var(--second-offset);
-      width: 5rem;
+      width: 5.5rem;
     }
   }
 
@@ -137,6 +146,10 @@ a {
 
   @include mobile-mid {
     letter-spacing: 0.3rem;
+  }
+
+  @include mobile-small {
+    letter-spacing: normal;
   }
 }
 

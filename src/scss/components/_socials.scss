@@ -5,7 +5,7 @@
     font: var(--semi-font);
     writing-mode: vertical-rl;
 
-    @include mobile-mid {
+    @include tablet {
       margin-right: var(--small-md-offset);
       margin-bottom: 0;
       writing-mode: inherit;
@@ -13,7 +13,7 @@
   }
 
   &__list {
-    @include mobile-mid {
+    @include tablet {
       display: flex;
       align-items: center;
     }
@@ -24,7 +24,7 @@
       margin-bottom: var(--second-offset);
     }
 
-    @include mobile-mid {
+    @include tablet {
       &--mr {
         &:not(:last-child) {
           margin-right: var(--small-md-offset);
@@ -63,12 +63,10 @@
     flex-direction: column;
     align-items: center;
 
-    @include table-small {
-      top: 0;
-    }
-
-    @include mobile-mid {
-      position: static;
+    @include tablet {
+      left: 50%;
+      bottom: 0%;
+      transform: translate(-50%, 100%);
     }
   }
 }
@@ -77,7 +75,7 @@
   display: flex;
   align-items: center;
 
-  @include mobile-mid {
+  @include tablet {
     flex-direction: row;
   }
 }

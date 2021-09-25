@@ -3,7 +3,7 @@
     margin-bottom: 23rem;
 
     @include table-small {
-      margin-bottom: 12rem;
+      margin-bottom: 10rem;
     }
   }
 
@@ -49,6 +49,22 @@
           rgba(0, 0, 0, 0.75) 0%,
           rgba(0, 0, 0, 0) 109.55%
         );
+
+        @include table-small {
+          height: 34rem;
+        }
+
+        @include mobile {
+          height: 31rem;
+        }
+
+        @include mobile-mid {
+          height: 29rem;
+        }
+
+        @include mobile-small {
+          height: 100%;
+        }
       }
     }
 
@@ -56,6 +72,11 @@
       margin: 0;
       margin-bottom: 3.9rem;
       font: var(--semi-font);
+
+      @include mobile {
+        margin-bottom: 2.5rem;
+        font-size: 1.6rem;
+      }
     }
 
     &-next {
@@ -80,6 +101,18 @@
     @include table-small {
       height: 75.5rem;
     }
+
+    @include mobile {
+      height: 70.5rem;
+    }
+
+    @include mobile-mid {
+      height: 65.5rem;
+    }
+
+    @include mobile-small {
+      height: 60.5rem;
+    }
   }
 }
 
@@ -94,11 +127,32 @@
       width: 7rem;
       height: 0.2rem;
       background-color: var(--color-gold);
+
+      @include mobile-mid {
+        width: 5.5rem;
+      }
+
+      @include table-small {
+        justify-content: center;
+        margin-left: calc(var(--second-offset) - 0.15rem);
+      }
     }
   }
 
   &-title--slide {
     margin-bottom: var(--main-offset);
     max-width: 70.5rem;
+
+    @include mobile {
+      font-size: 4rem;
+    }
+
+    @include mobile-mid {
+      font-size: 3.5rem;
+    }
+
+    @include mobile-small {
+      font-size: 3rem;
+    }
   }
 }
