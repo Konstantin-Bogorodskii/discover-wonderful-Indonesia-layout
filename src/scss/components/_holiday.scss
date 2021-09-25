@@ -3,16 +3,45 @@
 
   &__container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+
+    @include table-small {
+      flex-direction: column;
+    }
   }
 
   &__left {
+    margin-right: var(--second-offset);
     width: 40%;
+    min-width: 38rem;
+
+    @include table-small {
+      margin-right: 0;
+      margin-bottom: var(--big-offset);
+      width: 85%;
+      max-width: 60rem;
+    }
+
+    @include mobile-small {
+      width: 100%;
+      min-width: 32rem;
+    }
   }
 
   &__right {
     width: 44%;
+    min-width: 43rem;
+
+    @include table-small {
+      width: 85%;
+    }
+
+    @include mobile-small {
+      width: 100%;
+      min-width: 32rem;
+    }
   }
 
   &__text {
@@ -20,5 +49,17 @@
     margin-bottom: var(--main-offset);
     font: var(--semi-font);
     line-height: 32px;
+
+    @include tablet {
+      font-size: 1.6rem;
+    }
+
+    @include table-small {
+      text-align: center;
+    }
+  }
+
+  @include table-small {
+    margin-bottom: 10rem;
   }
 }

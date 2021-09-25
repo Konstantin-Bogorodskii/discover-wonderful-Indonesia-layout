@@ -4,11 +4,33 @@
     margin-bottom: var(--second-offset);
     font: var(--semi-font);
     writing-mode: vertical-rl;
+
+    @include mobile-mid {
+      margin-right: var(--small-md-offset);
+      margin-bottom: 0;
+      writing-mode: inherit;
+    }
+  }
+
+  &__list {
+    @include mobile-mid {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-bottom: var(--second-offset);
+    }
+
+    @include mobile-mid {
+      &--mr {
+        &:not(:last-child) {
+          margin-right: var(--small-md-offset);
+          margin-bottom: 0;
+        }
+      }
     }
   }
 
@@ -44,5 +66,18 @@
     @include table-small {
       top: 0;
     }
+
+    @include mobile-mid {
+      position: static;
+    }
+  }
+}
+
+.hero__socials {
+  display: flex;
+  align-items: center;
+
+  @include mobile-mid {
+    flex-direction: row;
   }
 }

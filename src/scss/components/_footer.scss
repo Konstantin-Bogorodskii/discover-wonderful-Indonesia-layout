@@ -31,6 +31,10 @@
         margin-right: 0;
         margin-bottom: var(--second-offset);
       }
+
+      @include mobile-small {
+        font-size: 1.8rem;
+      }
     }
 
     &-list {
@@ -65,6 +69,10 @@
     font: var(--low-bold);
     font-size: 2rem;
     color: var(--color-gold-light);
+
+    @include mobile-small {
+      font-size: 2.6rem;
+    }
   }
 
   &__item {
@@ -86,9 +94,23 @@
       color: var(--color-gold);
       transform: translate(10px, 0);
     }
+
+    @include mobile-small {
+      font-size: 2rem;
+    }
   }
 
   &:not(:last-child) {
     margin-right: var(--small-offset);
+
+    @include mobile-small {
+      margin-right: 0;
+      margin-bottom: var(--main-offset);
+    }
+  }
+
+  @include mobile-small {
+    width: 100%;
+    text-align: center;
   }
 }

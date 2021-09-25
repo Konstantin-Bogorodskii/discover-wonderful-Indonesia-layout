@@ -1,6 +1,10 @@
 .gallery {
   &__container {
     margin-bottom: 23rem;
+
+    @include table-small {
+      margin-bottom: 12rem;
+    }
   }
 
   &__swiper {
@@ -71,6 +75,10 @@
       &::after {
         font-size: 2.4rem;
       }
+    }
+
+    @include table-small {
+      height: 75.5rem;
     }
   }
 }

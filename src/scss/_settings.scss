@@ -1,6 +1,12 @@
+@import "./mixins";
+
 html {
   box-sizing: border-box;
   font-size: 10px;
+
+  @include mobile-small {
+    font-size: 9px;
+  }
 }
 
 *,
@@ -17,6 +23,10 @@ body {
   background: var(--color-black) url("../img/header-bg1.jpg") no-repeat center
     top;
   background-size: 100% auto;
+
+  @include mobile-small {
+    font-size: 9px;
+  }
 }
 
 img {
@@ -114,8 +124,19 @@ a {
     }
   }
 
+  @include tablet {
+    margin-bottom: var(--second-offset);
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+  }
+
   @include table-small {
+    justify-content: center;
     margin-bottom: var(--small-offset);
+  }
+
+  @include mobile-mid {
+    letter-spacing: 0.3rem;
   }
 }
 
@@ -123,4 +144,16 @@ a {
   margin: 0;
   margin-bottom: var(--main-offset);
   font: var(--title-bold);
+
+  @include tablet {
+    font-size: 5rem;
+  }
+
+  @include table-small {
+    text-align: center;
+  }
+
+  @include mobile-mid {
+    font-size: 4rem;
+  }
 }

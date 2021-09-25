@@ -26,6 +26,10 @@
   &:hover {
     color: var(--color-white);
   }
+
+  @include table-small {
+    justify-content: center;
+  }
 }
 
 .read-more:hover .read-more__icon {

@@ -13,6 +13,10 @@
     @include table-small {
       top: 25vw;
     }
+
+    @include mobile-mid {
+      top: 20vw;
+    }
   }
 
   &__title {
@@ -33,6 +37,16 @@
       @include table-small {
         font-size: 4.5rem;
       }
+
+      @include mobile-mid {
+        margin-bottom: var(--small-offset);
+        font-size: 4rem;
+        text-align: center;
+      }
+
+      @include mobile-small {
+        font-size: 2.5rem;
+      }
     }
 
     @include desktop {
@@ -41,6 +55,15 @@
 
     @include table-small {
       font-size: 5.3rem;
+    }
+
+    @include mobile-mid {
+      font-size: 4.7rem;
+      text-align: center;
+    }
+
+    @include mobile-small {
+      font-size: 3rem;
     }
   }
 }
@@ -75,6 +98,14 @@
       object-fit: cover;
       transition: all 0.3s ease-in-out;
     }
+  }
+
+  @include mobile {
+    margin-top: 9rem;
+  }
+
+  @include mobile-mid {
+    margin-top: 7rem;
   }
 }
 

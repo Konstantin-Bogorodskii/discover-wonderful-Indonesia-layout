@@ -38,6 +38,10 @@
       &:not(:last-child) {
         margin-right: var(--big-offset);
 
+        @include table-small {
+          margin-right: var(--main-offset);
+        }
+
         @include mobile {
           margin-right: 0;
         }
@@ -114,6 +118,10 @@
     @include mobile {
       display: none;
     }
+  }
+
+  @include mobile-mid {
+    top: var(--second-offset);
   }
 }
 
