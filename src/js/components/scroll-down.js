@@ -35,3 +35,18 @@ scrollDownLink.addEventListener("click", (e) => {
   e.preventDefault();
   smoothScroll(".holiday", 2000);
 });
+
+const navLinks = document.querySelectorAll(".header-nav__link");
+
+navLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    let tg = this.getAttribute("href");
+    smoothScroll(tg, 2000);
+
+    if (burger.classList.contains("burger--active")) {
+      burger.classList.remove("burger--active");
+      navbar.classList.remove("header-nav__list--active");
+    }
+  });
+});

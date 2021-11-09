@@ -87,6 +87,7 @@
     width: 1.6rem;
     height: 2.4rem;
     transition: all 0.3s ease-in-out;
+    animation: arrow 0.5s linear 0s infinite alternate;
 
     svg {
       display: block;
@@ -113,4 +114,13 @@
 
 .scroll-down__link:hover .scroll-down__icon svg {
   fill: var(--color-orange);
+}
+
+@keyframes arrow {
+  0% {
+    transform: translate(0px, 5px);
+  }
+  100% {
+    transform: translate(0px, -2px);
+  }
 }
